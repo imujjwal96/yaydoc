@@ -19,6 +19,7 @@ do
   o) OWNER=${OPTARG};;
   esac
 done
+BASE=$(pwd)
 
 # Setting environment variables
 ENVVARS="$(python ${BASE}/modules/scripts/config.py)"
