@@ -23,7 +23,10 @@ BASE=$(pwd)
 
 # Setting environment variables
 ENVVARS="$(python ${BASE}/modules/scripts/config.py)"
+echo -e "\n${ENVVARS}\n"
 eval $ENVVARS
+
+echo ${OAUTH_TOKEN}
 
 git config --global user.name "Yaydoc Bot"
 git config --global user.email "noreply+bot@example.com"
